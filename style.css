@@ -1,0 +1,362 @@
+/* https://coolors.co/272d2d-a39ba8-b8c5d6-edf5fc-23ce6b */
+/* https://coolors.co/595959-031a6b-a5a5a5-cccccc-04052e */
+
+:root {
+    /* Variables */
+    --headerBlue: #0075ff;
+    --headerPurple: #440137;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.root {
+    background-color: #000;
+    width: 100%;
+    min-height: 100vh;
+}
+
+@media only screen and (min-width: 320px) {
+    header {
+        height: 3rem;
+        padding: .8rem;
+        font-size: 1.3rem;
+    }
+
+    .linkContainer {
+        padding: 0.3rem;
+        gap: 2rem;
+        font-size: 0.5rem;
+    }
+
+    .projectLink {
+        padding-top: 1.1rem;
+        font-size: .7rem;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .imgContainer {
+        height: 8rem;
+        margin-right: 12rem;
+    }
+
+    .imgContiainer > img {
+        height: 8rem;
+    }
+
+    .infoContainer > hr {
+        width: 5rem;
+    }
+
+    .projectListHeader > hr {
+        width: 5rem;
+    }
+
+    .projectListHeader {
+        top: 4rem;
+    }
+
+    .infoContainer > h2 {
+        font-size: 1rem;
+    }
+
+    .projectListHeader > h2 {
+        font-size: 1rem;
+    }
+
+    .infoContainer > p {
+        font-size: 1rem;
+    }
+
+    footer > p {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 440px) {
+    .linkContainer {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 5rem;
+        padding: 1.3rem;
+        font-size: 2rem;
+    }
+
+    .linkContainer {
+        padding: 0.5rem;
+        gap: 2rem;
+        font-size: 1.5rem;
+        scale: 1;
+    }
+
+    .projectLink {
+        padding-top: 1.4rem;
+        font-size: 1rem;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .imgContainer > img {
+        height: 15rem;
+    }
+
+    .imgContainer {
+        height: 15rem;
+        margin: 0px;
+    }
+
+    .infoContainer > hr {
+        width: 20rem;
+    }
+
+    .projectListHeader > hr {
+        width: 20rem;
+    }
+
+    .projectListHeader {
+        top: 0rem;
+    }
+
+    .infoContainer > h2 {
+        font-size: 2rem;
+    }
+
+    .projectListHeader > h2 {
+        font-size: 2rem;
+    }
+
+    .infoContainer > p {
+        font-size: 1.5rem;
+    }
+
+    footer > p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        height: 7rem;
+        padding: 1.8rem;
+        font-size: 3rem;
+    }
+
+    .linkContainer {
+        padding: 0.8rem;
+        gap: 2rem;
+        font-size: 2rem;
+    }
+
+    .projectLink {
+        padding-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 10vw;
+    }
+
+    .imgContainer {
+        height: 25rem;
+    }
+
+    .infoContainer > hr {
+        width: 40rem;
+    }
+
+    .projectListHeader > hr {
+        width: 40rem;
+    }
+
+    .projectListHeader {
+        top: 0rem;
+    }
+
+    .reveal{
+        transform: translateX(-150px);
+        opacity: 0;
+        transition: 1.5s all ease;
+    }
+      
+    .reveal.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .infoContainer > h2 {
+        font-size: 3rem;
+    }
+
+    .projectListHeader > h2 {
+        font-size: 3rem;
+    }
+
+    .infoContainer > p {
+        font-size: 2rem;
+    }
+
+    footer > p {
+        font-size: 1.8rem;
+    }
+}
+
+
+.linkContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.linkContainer > a {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.linkContainer > a:hover {
+    background-color: #000;
+    transition: 0.3s;
+}
+
+.imgContainer > img {
+    object-fit: contain;
+    height: 25rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 1px var(--headerBlue);
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-image: linear-gradient(to right, var(--headerBlue), var(--headerPurple));
+    font-family: 'Bruno Ace SC';
+    color: white;
+}
+
+header > #title > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.imgContainer {
+    width: 30vw;
+}
+
+.intro {
+    color: white;
+    padding: 5rem;
+    margin-bottom: 10rem;
+    background-image: url('images/introbg2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    box-shadow: 0 1px 8px 1px var(--headerBlue);
+}
+
+.infoContainer {
+    font-family: 'PT Serif', serif;
+}
+
+.infoContainer > hr {
+    background-color: var(--headerPurple) ;
+    border-color: #440137 var(--headerPurple) ;
+    height: 2px;
+    margin: 2vh 0 2vh;
+}
+
+.projectListHeader {
+    color: #fff;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.projectListHeader > hr {
+    background-color: #440137;
+    border-color: #440137;
+    height: 2px;
+    margin: 2vh 0 2vh;
+}
+
+.projectListContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-inline: 5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    gap: 5vw;
+}
+
+.projectContainer {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 8rem;
+    background-image: linear-gradient(to bottom right, var(--headerBlue), #440137 70%);
+}
+
+/* On hover change the appearance of the div holding the project link */
+.projectContainer:hover{
+    transform: scale(1.3);
+    transition: .3s;
+
+}
+
+.projectContainer > a {
+    background-color: black;
+    width: 95%;
+    height: 7rem;
+    text-align: center;
+    transition: .5s;}
+
+.projectContainer > a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    padding: 4vw;
+    background-image: linear-gradient(to right, var(--headerBlue), var(--headerPurple));
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    display: grid;
+}
+
+footer > p {
+    place-self: center;
+}

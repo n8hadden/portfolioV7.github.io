@@ -1,0 +1,272 @@
+:root {
+    /* Variables */
+    --headerBlue: #0075ff;
+    --headerPurple: #440137;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.root {
+    background-color: #0e0e0e;
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+@media only screen and (min-width: 320px) {
+    header {
+        height: 3rem;
+        padding: .8rem;
+        font-size: 1.3rem;
+    }
+
+    .linkContainer {
+        padding: 0.3rem;
+        gap: 2rem;
+        font-size: 0.5rem;
+    }
+
+    .infoContainer {
+        margin-inline: 5rem;
+    }
+
+    .infoContainer>h2 {
+        font-size: 1rem;
+    }
+
+    .formContainer>h2 {
+        font-size: 1rem;
+    }
+
+    .infoContainer>p {
+        font-size: 0.5rem;
+    }
+
+    .contactForm>label {
+        font-size: 0.5rem;
+    }
+
+    #submit {
+        font-size: 0.5rem;
+    }
+
+    .formInput {
+        font-size: 0.4rem;
+    }
+
+    footer>p {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 440px) {
+    .linkContainer {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 5rem;
+        padding: 1.3rem;
+        font-size: 2rem;
+    }
+
+    .linkContainer {
+        padding: 0.5rem;
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .infoContainer {
+        margin-inline: 10rem;
+    }
+
+    .infoContainer>h2 {
+        font-size: 2rem;
+    }
+
+    .formContainer>h2 {
+        font-size: 2rem;
+    }
+
+    .infoContainer>p {
+        font-size: 1rem;
+    }
+
+    .contactForm>label {
+        font-size: 1rem;
+    }
+
+    #submit {
+        font-size: 1rem;
+    }
+
+    .formInput {
+        font-size: 0.8rem;
+    }
+
+    footer>p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        height: 7rem;
+        padding: 1.8rem;
+        font-size: 3rem;
+    }
+
+    .linkContainer {
+        padding: 0.8rem;
+        gap: 2rem;
+        font-size: 2rem;
+    }
+
+    .infoContainer {
+        margin-inline: 15rem;
+    }
+
+    .infoContainer>h2 {
+        font-size: 3rem;
+    }
+
+    .formContainer>h2 {
+        font-size: 3rem;
+    }
+
+    .infoContainer>p {
+        font-size: 1.5rem;
+    }
+
+    .contactForm>label {
+        font-size: 1.5rem;
+    }
+
+    #submit {
+        font-size: 1.5rem;
+    }
+
+    .formInput {
+        font-size: 1.2rem;
+    }
+
+    footer>p {
+        font-size: 1.8rem;
+    }
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-image: linear-gradient(to right, var(--headerBlue), var(--headerPurple));
+    font-family: 'Bruno Ace SC';
+    color: white;
+}
+
+header > #title > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.linkContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.linkContainer>a {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.linkContainer>a:hover {
+    background-color: #000;
+    transition: .3s;
+}
+
+.mainContent {
+    min-height: 65vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    gap: 5rem;
+    font-family: 'PT Serif', serif;
+    margin: 5rem 0px 5rem 0px;
+}
+
+.infoContainer>hr {
+    background-color: #0075ff;
+    border-color: #0075ff;
+    height: 2px;
+    margin: 2vh 0 2vh;
+}
+
+.formContainer {
+    background-image: linear-gradient(to bottom right, var(--headerBlue), var(--headerPurple));
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+.contactForm>label {
+    width: 100%;
+    padding: 2px;
+    display: block;
+    text-align: left;
+}
+
+#submit {
+    padding: 10px;
+    background-color:#48005e;
+    color: #FFFFFF;
+    border: none;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#submit:hover {
+    opacity: 0.6;
+    scale: 1.05;
+}
+
+.formInput {
+    padding: 5px;
+    width: 100%;
+    resize: none;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    padding: 4vw;
+    background-image: linear-gradient(to right, var(--headerBlue), var(--headerPurple));
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    display: grid;
+}
+
+footer > p {
+    place-self: center;
+}

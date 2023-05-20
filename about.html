@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+    </style>
+    <title>About Me</title>
+</head>
+
+<body>
+    <div class="root">
+        <header>
+            <div id="title">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <div id="links">
+                <div class="linkContainer">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="https://github.com/n8hadden" target="_blank">Github</a>
+                </div>
+            </div>
+        </header>
+        <div class="mainContent">
+            <div class="infoContainer">
+                <h2>About Me</h2>
+                <hr>
+                <p>My name is Nathan Hadden and I am from Peoria, Arizona. Most of my programming experience comes from
+                    my time at West-Mec Central Campus. Many of the projects in this portfolio are from my time at
+                    West-Mec. I have experience in creating programs HTML, CSS and Javascript programming languages.</p>
+            </div>
+            <div class="infoContainer">
+                <h2>Contact Info:</h2>
+                <hr>
+                <p>Email: n8hadden888@gmail.com</p>
+                <p>Cell Number: 623-300-8309</p>
+            </div>
+            <div class="formContainer">
+                <h2>Contact Form</h2>
+                <br><br>
+                <form class="contactForm">
+                    <label for="name">Name: </label><br>
+                    <input type="text" id="name" class="formInput" placeholder="First and Last Name" pattern="^[A-Za-z]$" required><br><br>
+
+                    <label for="eml">Email: </label><br>
+                    <input type="email" id="eml" class="formInput" placeholder="Email@email.com" required><br><br>
+
+                    <label for="pnum">Phone number: </label><br>
+                    <input type="tel" id="pnum" class="formInput" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+                    <label for="subject">Subject: </label><br>
+                    <input type="text" id="subject" class="formInput" placeholder="Subject" pattern="^[A-Za-z]$" required><br><br>
+
+                    <label for="comment">Comment: </label><br>
+                    <textarea id="comment" name="comment" class="formInput" placeholder="Comment" rows="4" cols="50" required></textarea><br><br>
+
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <p>
+                Nathan Hadden &copy; 2023 All Rights Reserved
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
